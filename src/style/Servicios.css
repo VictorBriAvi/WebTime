@@ -1,0 +1,103 @@
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+
+    width: 100%;
+
+
+    padding: 0 !important;
+
+
+
+
+}
+
+.imagen-card {
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: 100%;
+    /* Asegura que la imagen ocupe todo el alto disponible */
+    object-fit: cover;
+
+}
+
+
+
+
+
+.custom-card {
+    /* Agrega margen entre las tarjetas */
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    overflow: hidden;
+    /* Evita que el contenido desborde */
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+
+}
+
+.card-container {
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contenedor-card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.contenedor-texto {
+
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el contenedor de la imagen y el texto */
+.imagen-container {
+    position: relative;
+    /* Permite posicionar elementos hijos de forma absoluta */
+}
+
+/* Estilos para el texto superpuesto */
+.overlay {
+    position: absolute;
+    /* Posición absoluta sobre la imagen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fondo oscuro semi-transparente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+
+        display: flex;
+
+    }
+
+}
