@@ -1,0 +1,67 @@
+.contenedor-ubicacion {
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedor-col-ubicacion {
+
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-col {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+/* Restringe la imagen de fondo a pantalla completa en pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor-ubicacion {
+        background-size: 100% auto;
+
+        /* Ajusta la altura según tus necesidades */
+    }
+}
+
+.contenedor-row {
+
+    display: flex;
+
+    justify-content: center;
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0.2;
+        /* Opacidad inicial y final */
+    }
+
+    50% {
+        opacity: 0.5;
+        /* Opacidad máxima a la mitad de la animación */
+    }
+}
+
+
+.contenedor-ubicacion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Color de iluminación y opacidad */
+    opacity: 0;
+    /* Comienza transparente */
+    animation: fadeInOut 3s infinite;
+    /* Animación de 5 segundos en bucle */
+    pointer-events: none;
+    /* Evita que el pseudo-elemento interfiera con el contenido */
+}

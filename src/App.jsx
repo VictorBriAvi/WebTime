@@ -3,9 +3,11 @@ import Bienvenida from "./components/bienvenida/Bienvenida";
 import Carrusel from "./components/carousel/Carrusel";
 import Navbar from "./components/navbar/Navegacion";
 import Servicios from "./components/servicios/Servicios";
+import Ubicacion from "./components/contacto/Ubicacion";
 
 import imagen1 from "./assets/Carousel/imagen1.jpg";
 import imagen2 from "./assets/Carousel/imagen2.jpg";
+import Footer from "./components/footer/Footer";
 const imagenes = [
   {
     src: imagen1,
@@ -34,7 +36,9 @@ function App() {
       <Container fluid="md">
         <Bienvenida />
         <Servicios imagenes={imagenes} />
+        <Ubicacion />
       </Container>
+      <Footer />
     </>
   );
 }
