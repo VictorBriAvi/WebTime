@@ -1,21 +1,52 @@
 .contendor-bienvenida {
     height: auto;
     padding: 10px;
+    background-color: #101419;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+.montserrat-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para Merriweather */
+.merriweather-font {
+    font-family: 'Merriweather', serif;
 }
 
 .imagen-style {
     max-width: 100%;
     height: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
+}
+
+.texto-bienvenida-titulo {
+    display: flex;
+    align-items: center;
+    background-color: #101419;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
 }
 
 .contenedor-texto-bienvenida {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-
+    background-color: #101419;
     padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+
 }
 
 .contenedor-imagen {
@@ -27,4 +58,6 @@
 
 .texto-bienvenida {
     margin: 30px;
+
+    text-align: center;
 }

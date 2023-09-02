@@ -1,7 +1,27 @@
+.contenedor {
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+    display: flex;
+}
+
 .contenedor-ubicacion {
     width: 100%;
     overflow: hidden;
 }
+
+.contenedor-texto-ubicacion {
+
+    width: 100%;
+
+}
+
+.texto {
+    font-size: 4rem;
+    text-align: center;
+}
+
 
 .contenedor-col-ubicacion {
 
@@ -12,9 +32,9 @@
 .contenedor-col {
 
     display: flex;
-    flex-direction: column;
     align-items: center;
-    flex-wrap: nowrap;
+    justify-content: flex-end;
+
 
 }
 

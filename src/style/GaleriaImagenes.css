@@ -1,0 +1,30 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Cambia el número de columnas según tus necesidades */
+    grid-gap: 0;
+    /* Elimina cualquier espacio entre las imágenes */
+
+}
+
+.custom-image {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    /* Agrega esto para asegurarte de que las imágenes ocupen todo el ancho disponible */
+
+}
+
+.my-custom-image {
+    max-width: 100%;
+    /* Cambia al 16.666% para igualar el tamaño de 6 columnas en una cuadrícula de 6 columnas */
+    height: auto;
+
+    /* Agrega esto para asegurarte de que el contenedor ocupe todo el ancho de la columna */
+
+
+}
+
+.img-fluid {
+    height: auto
+}

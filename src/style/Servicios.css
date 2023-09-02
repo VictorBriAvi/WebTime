@@ -2,12 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
-
+    height: 250px;
     width: 100%;
-
-
     padding: 0 !important;
+    margin: 0 !important;
 
 
 
@@ -17,15 +15,21 @@
 .imagen-card {
     width: 100%;
     /* Asegura que la imagen ocupe todo el ancho disponible */
-    height: 100%;
-    /* Asegura que la imagen ocupe todo el alto disponible */
-    object-fit: cover;
+
+
 
 }
 
 
 
+.texto-bienvenida {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
 
+}
 
 .custom-card {
     /* Agrega margen entre las tarjetas */
@@ -33,7 +37,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 6px;
     color: white;
     overflow: hidden;
     /* Evita que el contenido desborde */
@@ -51,27 +55,52 @@
     flex-direction: column;
     justify-content: center;
 
+
+
 }
 
 .contenedor-card {
-    padding: 10px;
+
     display: flex;
     flex-direction: column;
+    background-color: #FFFFFF;
+    width: 50%;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+
 
 
 
 }
 
-.contenedor-texto {
+.montserrat-font {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
 
+}
+
+/* Estilos para Merriweather */
+.merriweather-font {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+
+
+}
+
+
+.contenedor-texto {
     display: flex;
     align-items: center;
+    justify-content: center;
+
 }
 
 /* Estilos para el contenedor de la imagen y el texto */
 .imagen-container {
     position: relative;
     /* Permite posicionar elementos hijos de forma absoluta */
+
 }
 
 /* Estilos para el texto superpuesto */
@@ -91,13 +120,30 @@
     text-align: center;
     color: white;
     padding: 20px;
+
+    font-family: 'Merriweather', serif;
 }
+
+.montserrat-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para Merriweather */
+.merriweather-font {
+    font-family: 'Merriweather', serif;
+}
+
 
 @media (max-width: 768px) {
     .card-container {
 
         display: flex;
 
+    }
+
+    .card-body {
+
+        height: 150px;
     }
 
 }

@@ -11,7 +11,7 @@ const Bienvenida = () => {
           <img src={imagen} alt="" className="imagen-style " />
         </Col>
         <Col sm={6} className="contenedor-texto-bienvenida">
-          <Col sm={12} className="texto-bienvenida">
+          <Col sm={12} className="texto-bienvenida-titulo ">
             Bienvenidos
           </Col>
           <Col sm={12} className="texto-bienvenida">

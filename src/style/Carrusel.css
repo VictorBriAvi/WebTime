@@ -1,0 +1,64 @@
+.imagenStyle {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 0.3s ease;
+    /* Ajusta la duración de la transición según el tiempo en setTimeout */
+    opacity: 1;
+
+
+}
+
+.imagenStyle.fadeOut {
+    opacity: 0;
+}
+
+/* Estilos para Montserrat */
+.montserrat-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para Merriweather */
+.merriweather-font {
+    font-family: 'Merriweather', serif;
+}
+
+
+
+
+.captionStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7) !important;
+    /* Cambia el valor alfa para ajustar la opacidad */
+}
+
+.imagen-logo {
+    width: 200px;
+
+}
+
+.contenedor-caption {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+
+    height: 50vh;
+}
