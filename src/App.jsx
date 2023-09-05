@@ -18,6 +18,7 @@ import {
   imagenServicios7,
   imagenServicios8,
 } from "./assets/Servicios";
+import MarcasTrabajadas from "./components/MarcasTrabajadas";
 const imagenes = [
   {
     src: imagen1,
@@ -71,7 +72,7 @@ function App() {
           <Container fluid="md">
             <Bienvenida />
           </Container>
-
+          <MarcasTrabajadas />
           <Servicios imagenes={servicios} />
           <Container>
             <Ubicacion />

@@ -12,12 +12,7 @@ const Carrusel = ({ imagenes }) => {
 
   return (
     <>
-      <Carousel
-        activeIndex={index}
-        onSelect={handleSelect}
-        interval={null}
-        className="my-5"
-      >
+      <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
         {imagenes.map((imagen, idx) => (
           <Carousel.Item key={idx} className="carouselItemStyle">
             <div className="overlay"></div>

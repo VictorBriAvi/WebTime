@@ -1,0 +1,41 @@
+.contenedor-marcas {
+    overflow: hidden;
+    /* Oculta el contenido que desborda */
+    width: 100%;
+
+    display: flex;
+}
+
+.marcas-cinta {
+    display: flex;
+    /* Usa un contenedor flexible */
+    animation: moverCinta 10s linear infinite alternate;
+    /* Animación para mover la cinta */
+}
+
+.logitoMarca {
+    width: 30%;
+    height: 50%;
+    margin: 0 10px;
+    /* Espacio entre las imágenes */
+}
+
+@keyframes moverCinta {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Desplaza la cinta hacia la izquierda */
+    }
+}
+
+.mapa {
+    width: 400px;
+    height: 450px;
+    border: 0;
+
+}
+
+.contendor-mapita {}
