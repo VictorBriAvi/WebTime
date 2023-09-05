@@ -23,13 +23,13 @@ const Servicios = ({ imagenes }) => {
   };
 
   return (
-    <Container fluid className="contenedor-card ">
+    <Container fluid className="contenedor-card  my-5">
       <Row xs="auto">
         <Col sm={4} className="contenedor-texto">
-          <Col sm={12} className="texto-bienvenida">
-            <h1 className="montserrat-font">Nuestros Servicios</h1>
+          <Col sm={12} className="texto-bienvenida my-5">
+            <h1 className="montserrat-font mt-3">Nuestros Servicios</h1>
 
-            <div className="merriweather-font">
+            <div className="merriweather-font ">
               <p>
                 <BsFillPatchCheckFill />
                 Excelente Atención
@@ -52,7 +52,7 @@ const Servicios = ({ imagenes }) => {
           </Col>
         </Col>
         <Col sm={8}>
-          <Col className="contendor-tarjeta">
+          <Col className="contendor-tarjeta mb-3">
             <div className="card-container  gradient-background">
               <div>
                 <Row xs={1} md={2}>

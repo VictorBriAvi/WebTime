@@ -1,12 +1,30 @@
 .contenedor-footer {
-    height: 50vh;
+    width: 100%;
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    color: #FFFFFF;
+
 }
 
 .contenedor-row-footer {
 
     display: flex;
 
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+
+}
+
+.imagen-logo-footer {
+    width: 200px;
+}
+
+.contenedor-redes-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #FFFFFF;
 }

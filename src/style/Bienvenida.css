@@ -1,12 +1,7 @@
 .contendor-bienvenida {
     height: auto;
-    padding: 10px;
-    background-color: #101419;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
     color: #FFFFFF;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
 }
 
@@ -29,8 +24,8 @@
 .texto-bienvenida-titulo {
     display: flex;
     align-items: center;
-    background-color: #101419;
-    padding: 20px;
+
+
     flex-direction: column;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
@@ -40,8 +35,8 @@
 .contenedor-texto-bienvenida {
     display: flex;
     align-items: center;
-    background-color: #101419;
-    padding: 20px;
+    color: black;
+
     flex-direction: column;
     justify-content: center;
     font-family: 'Merriweather', serif;
@@ -57,7 +52,7 @@
 }
 
 .texto-bienvenida {
-    margin: 30px;
+
 
     text-align: center;
 }

@@ -2,7 +2,6 @@
 
     margin-top: 25px;
     margin-bottom: 25px;
-    color: #FFFFFF;
     display: flex;
 }
 
@@ -15,11 +14,23 @@
 
     width: 100%;
 
+
+
 }
 
-.texto {
-    font-size: 4rem;
-    text-align: center;
+.redes {
+    font-size: 3rem;
+}
+
+.contenedor-redes {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+
 }
 
 
@@ -34,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
+    height: 50vh;
 
 }
 
@@ -84,4 +95,44 @@
     /* Animación de 5 segundos en bucle */
     pointer-events: none;
     /* Evita que el pseudo-elemento interfiera con el contenido */
+}
+
+
+.contenedor-ubicacion-relativo {
+    position: relative
+}
+
+.icono-ubicacion {
+    position: absolute;
+    top: 72%;
+    /* Distancia desde la parte superior, ajusta según sea necesario */
+    left: 33%;
+    /* Distancia desde la izquierda, ajusta según sea necesario */
+    transition: transform 0.3s ease-in-out;
+    /* Agrega una transición de 0.3 segundos al efecto de transformación */
+    cursor: pointer;
+    animation: zoomAnimation 2s infinite alternate;
+}
+
+.icono-ubicacion:hover {
+    transform: scale(1.8);
+    /* Escala el icono en un 20% en el estado de desplazamiento */
+
+}
+
+@keyframes zoomAnimation {
+    0% {
+        transform: scale(1.2);
+        /* Estado inicial, sin escala */
+    }
+
+    50% {
+        transform: scale(1.5);
+        /* Escala al 120% a la mitad de la animación */
+    }
+
+    100% {
+        transform: scale(1.7);
+        /* Vuelve al estado original al final de la animación */
+    }
 }

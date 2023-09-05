@@ -5,16 +5,13 @@ import "../../style/Bienvenida.css";
 
 const Bienvenida = () => {
   return (
-    <Container fluid className="contendor-bienvenida">
+    <Container fluid className="contendor-bienvenida my-5">
       <Row xs="auto">
-        <Col sm={6} className="contenedor-imagen">
-          <img src={imagen} alt="" className="imagen-style " />
-        </Col>
-        <Col sm={6} className="contenedor-texto-bienvenida">
+        <Col sm={6} className="contenedor-texto-bienvenida my-5">
           <Col sm={12} className="texto-bienvenida-titulo ">
             Bienvenidos
           </Col>
-          <Col sm={12} className="texto-bienvenida">
+          <Col sm={12} className="texto-bienvenida mt-3">
             Lorem Ipsum es simplemente el texto de relleno de las imprentas y
             archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
             de las industrias desde el año 1500, cuando un impresor (N. del T.
@@ -22,6 +19,9 @@ const Bienvenida = () => {
             textos y los mezcló de tal manera que logró hacer un libro de textos
             especimen.
           </Col>
+        </Col>
+        <Col sm={6} className="contenedor-imagen">
+          <img src={imagen} alt="" className="imagen-style " />
         </Col>
       </Row>
     </Container>

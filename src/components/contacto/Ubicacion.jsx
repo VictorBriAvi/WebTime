@@ -4,56 +4,49 @@ import "../../style/Ubicacion.css";
 import { FaSearchLocation, FaTiktok } from "react-icons/fa";
 import { ImFacebook2, ImInstagram } from "react-icons/im";
 import { BsWhatsapp } from "react-icons/bs";
+import { useState } from "react";
 const ubicacion = () => {
+  const [clic, setClic] = useState(false);
+
+  const handleIconClick = () => {
+    setClic(true);
+
+    setTimeout(() => {
+      setClic(false);
+    }, 300); // Restablece el estado de clic después de 300 milisegundos (ajusta según la duración de tu animación)
+  };
+
   return (
-    <Container fluid className="contenedor">
+    <Container fluid className="contenedor my-5">
       <Row xs="auto" className="contenedor-row">
-        <Col sm={6} className="contenedor-col">
-          <Col sm={12} md={4}>
-            <div className="contenedor-texto-ubicacion text-center h3 ">
-              <h2>
-                <FaSearchLocation />
-              </h2>
-              <p>Riobamba 114</p>
-            </div>
-          </Col>
-          <Col sm={12} md={4}>
-            <div className="text-center h1">
-              <p>
-                <ImInstagram />
-              </p>
-              <p>
-                <ImFacebook2 />
-              </p>
-              <p>
-                <FaTiktok />
-              </p>
-            </div>
-          </Col>
-          <Col sm={12} md={4}>
-            <div className="text-center">
-              <p className="texto">
-                <BsWhatsapp />
-              </p>
+        <Col sm={6} className="contenedor-col justify-content-center ">
+          <Col sm={12} md={4} className="redes">
+            <div className="contenedor-redes">
+              <ImInstagram className="ml-4" />
+
+              <ImFacebook2 className="mx-4" />
+
+              <FaTiktok className="mx-4" />
+
+              <BsWhatsapp className="mr-4" />
             </div>
           </Col>
         </Col>
-        <Col
-          sm={6}
-          className="contenedor-col-ubicacion "
-          style={{ position: "relative" }}
-        >
+        <Col sm={6} className="contenedor-col-ubicacion mb-5">
           <div>
-            {" "}
-            <FaSearchLocation
-              style={{
-                position: "absolute",
-
-                left: "191px",
-                bottom: "120px",
-              }}
-            />
-            <img src={mapa} alt="" className="contenedor-ubicacion " />
+            <div className="contenedor-texto-ubicacion text-center h3 ">
+              <div className="contenedor-ubicacion-relativo">
+                <div
+                  className={`icono-ubicacion ${
+                    clic ? console.log("click") : ""
+                  }`}
+                  onClick={handleIconClick}
+                >
+                  <FaSearchLocation />
+                </div>
+                <img src={mapa} alt="" className="contenedor-ubicacion " />
+              </div>
+            </div>
           </div>
         </Col>
       </Row>
