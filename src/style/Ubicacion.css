@@ -1,138 +1,22 @@
-.contenedor {
+.contenedor {}
 
-    margin-top: 25px;
-    margin-bottom: 25px;
-    display: flex;
-}
-
-.contenedor-ubicacion {
-    width: 100%;
-    overflow: hidden;
-}
-
-.contenedor-texto-ubicacion {
-
-    width: 100%;
-
-
-
-}
-
-.redes {
-    font-size: 3rem;
-}
-
-.contenedor-redes {
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-
-
-
-
-}
-
-
-.contenedor-col-ubicacion {
-
-    display: flex;
-    align-items: center;
-}
 
 .contenedor-col {
 
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    height: 50vh;
-
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-/* Restringe la imagen de fondo a pantalla completa en pantallas pequeñas */
-@media (max-width: 768px) {
-    .contenedor-ubicacion {
-        background-size: 100% auto;
 
-        /* Ajusta la altura según tus necesidades */
-    }
-}
-
-.contenedor-row {
+.contenedor-redes {
 
     display: flex;
-
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 4rem;
 }
 
-@keyframes fadeInOut {
-
-    0%,
-    100% {
-        opacity: 0.2;
-        /* Opacidad inicial y final */
-    }
-
-    50% {
-        opacity: 0.5;
-        /* Opacidad máxima a la mitad de la animación */
-    }
-}
-
-
-.contenedor-ubicacion::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    /* Color de iluminación y opacidad */
-    opacity: 0;
-    /* Comienza transparente */
-    animation: fadeInOut 3s infinite;
-    /* Animación de 5 segundos en bucle */
-    pointer-events: none;
-    /* Evita que el pseudo-elemento interfiera con el contenido */
-}
-
-
-.contenedor-ubicacion-relativo {
-    position: relative
-}
-
-.icono-ubicacion {
-    position: absolute;
-    top: 72%;
-    /* Distancia desde la parte superior, ajusta según sea necesario */
-    left: 33%;
-    /* Distancia desde la izquierda, ajusta según sea necesario */
-    transition: transform 0.3s ease-in-out;
-    /* Agrega una transición de 0.3 segundos al efecto de transformación */
-    cursor: pointer;
-    animation: zoomAnimation 2s infinite alternate;
-}
-
-.icono-ubicacion:hover {
-    transform: scale(1.8);
-    /* Escala el icono en un 20% en el estado de desplazamiento */
-
-}
-
-@keyframes zoomAnimation {
-    0% {
-        transform: scale(1.2);
-        /* Estado inicial, sin escala */
-    }
-
-    50% {
-        transform: scale(1.5);
-        /* Escala al 120% a la mitad de la animación */
-    }
-
-    100% {
-        transform: scale(1.7);
-        /* Vuelve al estado original al final de la animación */
-    }
-}
+.contenedor-col-ubicacion {}

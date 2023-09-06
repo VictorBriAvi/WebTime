@@ -5,6 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import imagenLogo from "../../assets/Logos/LogoLetrasBlancasCrop.png";
 
 import "../../style/Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navegacion = () => {
   return (
@@ -21,10 +22,12 @@ const Navegacion = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Precios</Nav.Link>
-            <Nav.Link href="#link">Precios</Nav.Link>
-            <Nav.Link href="#link">Promociones</Nav.Link>
+            <Nav.Link as={Link} to="/WebTime">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/WebTime/Precios">
+              Precios
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
