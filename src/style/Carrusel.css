@@ -5,29 +5,7 @@
     justify-content: center;
     align-items: center;
 
-    transition: opacity 0.3s ease;
-    /* Ajusta la duración de la transición según el tiempo en setTimeout */
-    opacity: 1;
-
-
 }
-
-.imagenStyle.fadeOut {
-    opacity: 0;
-}
-
-/* Estilos para Montserrat */
-.montserrat-font {
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Estilos para Merriweather */
-.merriweather-font {
-    font-family: 'Merriweather', serif;
-}
-
-
-
 
 .captionStyle {
     display: flex;
@@ -44,13 +22,28 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7) !important;
     /* Cambia el valor alfa para ajustar la opacidad */
 }
 
 .imagen-logo {
     width: 200px;
+    /* Ajusta el tamaño inicial de la imagen */
+    animation: zoomInOut 2s infinite alternate;
+    /* Nombre de la animación, duración, iteración */
+    animation-delay: 2s;
+    /* Ajusta el retraso antes de que comience la animación */
+}
 
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1.2);
+        /* Tamaño normal */
+    }
+
+    100% {
+        transform: scale(0.9);
+        /* Tamaño aumentado (zoom) */
+    }
 }
 
 .contenedor-caption {

@@ -11,25 +11,25 @@ const Navegacion = () => {
   return (
     <Navbar
       expand="lg"
-      bg="dark"
-      data-bs-theme="dark"
-      className="color-fondo-navbar bg-body-tertiary"
+      className="color-fondo-navbar "
     >
-      <Container className="color-fondo-navbar">
-        <Navbar.Brand href="#home">
-          <img src={imagenLogo} className="imagen-logo-navbar" alt="" />
+      <Container  className="contenedor-flex">
+     
+        <Navbar.Brand href="#home" className="fondo-logo">
+          <img src={imagenLogo} className="imagen-logo-navbar " alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Collapse id="basic-navbar-nav ">
+          <Nav className="me-auto  barra-lateral">
             <Nav.Link as={Link} to="/WebTime">
-              Home
+              <button className="css-button-retro--yellow ">Home</button>
             </Nav.Link>
             <Nav.Link as={Link} to="/WebTime/Precios">
-              Precios
+            <button className="css-button-retro--yellow ">Tienda</button>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+
       </Container>
     </Navbar>
   );

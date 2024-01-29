@@ -8,8 +8,6 @@ import Servicios from "./servicios/Servicios";
 import Ubicacion from "./contacto/Ubicacion";
 import GaleriaImagenes from "./galeriaImagenes/GaleriaImagenes";
 
-import imagen1 from "../assets/Carousel/imagen1.jpg";
-import imagen2 from "../assets/Carousel/imagen2.jpg";
 import {
   imagenServicios1,
   imagenServicios3,
@@ -19,38 +17,7 @@ import {
   imagenServicios8,
 } from "../assets/Servicios";
 
-const imagenes = [
-  {
-    src: imagen1,
-    alt: "Imagen 1 ",
-    titulo: "Manicura",
-  },
-  {
-    src: imagen2,
-    alt: "Imagen 2 ",
-    titulo: "Pedicura",
-  },
-  {
-    src: imagen1,
-    alt: "Imagen 3 ",
-    titulo: "Colores",
-  },
-  {
-    src: imagen2,
-    alt: "Imagen 4 ",
-    titulo: "Cortes",
-  },
-  {
-    src: imagen2,
-    alt: "Imagen 4 ",
-    titulo: "Tratamiento Capilar",
-  },
-  {
-    src: imagen2,
-    alt: "Imagen 4 ",
-    titulo: "Promociones",
-  },
-];
+
 
 const servicios = [
   { src: imagenServicios1, alt: "Imagen 1 ", titulo: "Corte" },
@@ -66,7 +33,7 @@ const Home = () => {
     <div className="app">
       <Fondo /> {/* Agrega el fondo aquí */}
       <div className="content">
-        <Carrusel imagenes={imagenes} />
+        <Carrusel  />
         <div className="main-content">
           <Container fluid="md">
             <Bienvenida />
@@ -77,7 +44,7 @@ const Home = () => {
             <Ubicacion />
           </Container>
 
-          <GaleriaImagenes imagenes={imagenes} />
+          <GaleriaImagenes />
         </div>
       </div>
     </div>

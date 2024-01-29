@@ -5,7 +5,7 @@ import { BsFillPatchCheckFill } from "react-icons/bs";
 import { TiMessages } from "react-icons/ti";
 
 const Servicios = ({ imagenes }) => {
-  console.log(imagenes);
+ 
   const renderCuadros = () => {
     return imagenes.map((cuadro, index) => (
       <Card key={index} className="custom-card">

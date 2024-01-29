@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import imagen from "../../assets/Carousel/imagen1.jpg";
+
 import "../../style/Bienvenida.css";
 
 const Bienvenida = () => {
@@ -21,7 +21,7 @@ const Bienvenida = () => {
           </Col>
         </Col>
         <Col sm={6} className="contenedor-imagen">
-          <img src={imagen} alt="" className="imagen-style " />
+
         </Col>
       </Row>
     </Container>

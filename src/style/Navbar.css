@@ -1,5 +1,50 @@
 .imagen-logo-navbar {
-    width: 100px;
+    width: 150px;
 }
 
-.color-fondo-navbar {}
+
+
+.fondo-logo {
+
+    border-bottom: 1px solid indigo;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.css-button-retro--yellow {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #000;
+    color: #000;
+    background: rebeccapurple;
+
+    z-index: 0;
+
+}
+
+.css-button-retro--yellow:hover:after {
+    top: 0;
+    left: 0;
+}
+
+
+
+.css-button-retro--yellow:after {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    transition: 0.2s;
+    background-color: #ffe566;
+
+}
