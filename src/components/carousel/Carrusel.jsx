@@ -3,9 +3,8 @@ import Carousel from "react-bootstrap/Carousel";
 import imagenLogo from "../../assets/Logos/LogotipoOriginalPNG.png";
 import { Carrousel } from "../../models/Carousel";
 import "../../style/Carrusel.css";
-const Carrusel = ({ imagenes }) => {
+const Carrusel = () => {
   const [index, setIndex] = useState(0);
-  const [startAnimation, setStartAnimation] = useState(false);
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);

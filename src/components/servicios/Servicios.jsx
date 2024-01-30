@@ -27,31 +27,10 @@ const Servicios = ({ imagenes }) => {
       <Row xs="auto">
         <Col sm={4} className="contenedor-texto">
           <Col sm={12} className="texto-bienvenida my-5">
-            <h1 className="montserrat-font mt-3">Nuestros Servicios</h1>
 
-            <div className="merriweather-font ">
-              <p>
-                <BsFillPatchCheckFill />
-                Excelente Atención
-              </p>
-              <p>
-                <BsFillPatchCheckFill />
-                Garantía
-              </p>
-              <p>
-                <BsFillPatchCheckFill />
-                Excelentes Profesionales
-              </p>
-            </div>
-            <h2>
-              <p>
-                <TiMessages />
-                Tus comentarios son bienvenidos
-              </p>
-            </h2>
           </Col>
         </Col>
-        <Col sm={8}>
+        <Col sm={12}>
           <Col className="contendor-tarjeta mb-3">
             <div className="card-container  gradient-background">
               <div>

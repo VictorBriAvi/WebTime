@@ -11,7 +11,7 @@ const Navegacion = () => {
   return (
     <Navbar
       expand="lg"
-      className="color-fondo-navbar "
+      className="color-fondo-navbar  sticky-top"
     >
       <Container  className="contenedor-flex">
      

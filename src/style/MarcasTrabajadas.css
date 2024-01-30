@@ -9,27 +9,35 @@
 .marcas-cinta {
     display: flex;
     /* Usa un contenedor flexible */
-    animation: moverCinta 10s linear infinite alternate;
-    /* Animación para mover la cinta */
+    overflow: hidden;
+    /* Oculta el desbordamiento para evitar que las imágenes se vean fuera del contenedor */
+    position: relative;
+    /* Añade posición relativa para poder reiniciar la animación */
 }
 
 .logitoMarca {
-    width: 30%;
+    width: 50%;
     height: 50%;
     margin: 0 10px;
     /* Espacio entre las imágenes */
+    animation: moverCinta 15s linear infinite;
+    /* Animación para mover la cinta */
+
+    /* Ajusta la posición absoluta para permitir la transición continua */
 }
 
 @keyframes moverCinta {
     0% {
-        transform: translateX(0);
+        transform: translateX(-300%);
+        /* Empieza desde la derecha */
     }
 
     100% {
-        transform: translateX(-100%);
-        /* Desplaza la cinta hacia la izquierda */
+        transform: translateX(300%);
+        /* Termina en la izquierda */
     }
 }
+
 
 .mapa {
     width: 400px;
