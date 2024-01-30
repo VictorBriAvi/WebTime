@@ -16,7 +16,7 @@ const GaleriaImagenes  = () => {
         {arregloGaleriaImagenes.map((image, index) => (
           <img
             key={index}
-            src={`../../../public/Servicios/${image.type}-${image.id}.jpg`}
+            src={`/../../../public/Servicios/${image.type}-${image.id}.jpg`}
             alt={`Image ${index}`}
             className="img-fluid "
           />

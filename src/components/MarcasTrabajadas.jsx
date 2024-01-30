@@ -11,7 +11,7 @@ const MarcasTrabajadas = () => {
       <div className="marcas-cinta my-5">
      { arregloMarcasTrabajadas.map((imagen,index) => (
 
-      <img className="logitoMarca" src = {`../../public/logosMarcas/${imagen.type}-${imagen.id}.png`} alt = "" / >))}
+      <img className="logitoMarca" src = {`/../../public/logosMarcas/${imagen.type}-${imagen.id}.png`} alt = "" / >))}
       </div>
     </div>
   );
