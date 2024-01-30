@@ -22,7 +22,7 @@ const Carrusel = () => {
             <div className="imageContainer">
               <img
                 className="imagenStyle"
-                src={`../../../public/Carousel/${imagen.type}-${imagen.id}.jpg`}
+                src={`/../../../public/Carousel/${imagen.type}-${imagen.id}.jpg`}
                 alt={`${imagen.name}`}
               />
             </div>
