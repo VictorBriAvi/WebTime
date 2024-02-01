@@ -1,149 +1,58 @@
-.card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    width: 100%;
-    padding: 0 !important;
-    margin: 0 !important;
+/** ACA COMIENZAN LA SEGUNDA PARTE DEL COMPONENTE */
 
-
+.imagen-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
 
 
 }
 
-.imagen-card {
-    width: 100%;
-    /* Asegura que la imagen ocupe todo el ancho disponible */
+.imagen-servicio.custom-image {
+    transition: transform 2s ease;
+    /* Agrega una transición suave */
+}
 
-
-
+.imagen-servicio.custom-image:hover {
+    transform: scale(1.1);
+    /* Reduce la escala de la imagen al 90% */
 }
 
 
 
-.texto-bienvenida {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-
-}
-
-.custom-card {
-    /* Agrega margen entre las tarjetas */
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 6px;
-    color: white;
-    overflow: hidden;
-    /* Evita que el contenido desborde */
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-
-}
-
-.card-container {
-
+.imagen-servicio {
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-
-
-}
-
-.contenedor-card {
-
-    display: flex;
-    flex-direction: column;
-    background-color: #FFFFFF;
-    width: 50%;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-
-
-
-
-
-}
-
-.montserrat-font {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-
-}
-
-/* Estilos para Merriweather */
-.merriweather-font {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-
-
-}
-
-
-.contenedor-texto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-/* Estilos para el contenedor de la imagen y el texto */
-.imagen-container {
-    position: relative;
-    /* Permite posicionar elementos hijos de forma absoluta */
-
-}
-
-/* Estilos para el texto superpuesto */
-.overlay {
-    position: absolute;
-    /* Posición absoluta sobre la imagen */
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
 
-    /* Fondo oscuro semi-transparente */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
     color: white;
-    padding: 20px;
 
-    font-family: 'Merriweather', serif;
 }
 
-.montserrat-font {
-    font-family: 'Montserrat', sans-serif;
+.imagen-container {
+
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    position: relative;
+    overflow: hidden;
+
+    /* Oculta cualquier parte de la imagen que se extienda más allá del contenedor */
 }
 
-/* Estilos para Merriweather */
-.merriweather-font {
-    font-family: 'Merriweather', serif;
-}
+.texto-superpuesto {
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
 
 
-@media (max-width: 768px) {
-    .card-container {
-
-        display: flex;
-
-    }
-
-    .card-body {
-
-        height: 150px;
-    }
 
 }

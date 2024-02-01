@@ -1,47 +1,31 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 
 import "../../style/Servicios.css";
-import { BsFillPatchCheckFill } from "react-icons/bs";
-import { TiMessages } from "react-icons/ti";
+import { servicios } from "../../models/Servicios";
 
 const Servicios = ({ imagenes }) => {
- 
-  const renderCuadros = () => {
-    return imagenes.map((cuadro, index) => (
-      <Card key={index} className="custom-card">
-        <Card.Body className="card-body">
-          <div className="imagen-container">
-            <img className="imagen-card" src={cuadro.src} alt={index.alt} />
-          </div>
-          <div className="overlay">
-            <h2>{cuadro.titulo}</h2>
-            {/** <p>Descripción del texto</p>*/}
-          </div>
-        </Card.Body>
-      </Card>
-    ));
-  };
+  const arregloServicios = servicios.filter((img) => img.type === "s");
+
+  console.log(arregloServicios);
 
   return (
-    <Container fluid className="contenedor-card  my-5">
-      <Row xs="auto">
-        <Col sm={4} className="contenedor-texto">
-          <Col sm={12} className="texto-bienvenida my-5">
+    <Container fluid className="p-0 my-5">
+      {/** ACA COMIENZAN LA SEGUNDA PARTE DEL COMPONENTE */}
+      <div className="imagen-grid">
+        {arregloServicios.map((imagen, index) => (
+          <div className="imagen-container">
+            <img
+              className="imagen-servicio custom-image"
+              src={`../../../public/assets/Servicios/${imagen.type}-${imagen.id}.jpg`}
+              alt={`Imagen ${index}`}
+            />
 
-          </Col>
-        </Col>
-        <Col sm={12}>
-          <Col className="contendor-tarjeta mb-3">
-            <div className="card-container  gradient-background">
-              <div>
-                <Row xs={1} md={2}>
-                  {renderCuadros()}
-                </Row>
-              </div>
+            <div className="texto-superpuesto custom-image">
+              <h1 className="anton-regular">{`${imagen.name}`}</h1>
             </div>
-          </Col>
-        </Col>
-      </Row>
+          </div>
+        ))}
+      </div>
     </Container>
   );
 };

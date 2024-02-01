@@ -2,8 +2,9 @@
     overflow: hidden;
     /* Oculta el contenido que desborda */
     width: 100%;
-
     display: flex;
+    align-items: center;
+
 }
 
 .marcas-cinta {
@@ -28,20 +29,12 @@
 
 @keyframes moverCinta {
     0% {
-        transform: translateX(-300%);
+        transform: translateX(-400%);
         /* Empieza desde la derecha */
     }
 
     100% {
-        transform: translateX(300%);
+        transform: translateX(200%);
         /* Termina en la izquierda */
     }
-}
-
-
-.mapa {
-    width: 400px;
-    height: 450px;
-    border: 0;
-
 }

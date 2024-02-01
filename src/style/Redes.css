@@ -1,0 +1,113 @@
+.contenedor-redes {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0;
+    grid-auto-flow: column;
+    position: relative;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.icono {
+
+    margin-bottom: 20px;
+    font-size: 4rem;
+
+}
+
+
+
+.contenedor-derecha {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-derecha:hover {
+    cursor: pointer;
+}
+
+.contenedor-izquierda {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.contenedor-izquierda:hover {
+    cursor: pointer;
+}
+
+
+
+/* Define el área de cada icono */
+.instagram {
+    grid-column: 1;
+    /* Columna 1 */
+    grid-row: 1;
+    /* Fila 1 */
+    /*animation: bounce 4s infinite alternate;*/
+    animation: izquierda 30s infinite alternate;
+
+
+}
+
+
+
+
+
+
+.facebook {
+    grid-column: 1;
+    /* Columna 2 */
+    grid-row: 2;
+    /* Fila 1 */
+    animation: derecha 30s infinite alternate;
+
+}
+
+
+.tiktok {
+    grid-column: 2;
+    /* Columna 1 */
+    grid-row: 3;
+    /* Fila 2 */
+    animation: izquierda 30s infinite alternate;
+}
+
+.whatsapp {
+
+    grid-column: 1;
+    /* Columna 2 */
+    grid-row: 4;
+    /* Fila 2 */
+    animation: derecha 30s infinite alternate;
+}
+
+
+
+
+
+@keyframes derecha {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes izquierda {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}

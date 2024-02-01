@@ -11,8 +11,8 @@ const GaleriaImagenes  = () => {
   
 
   return (
-    <Container fluid className="contenedor-galeria p-0  my-5">
-      <div className="image-grid  bg-black">
+    <Container fluid className=" p-0  my-5">
+      <div className="image-grid  ">
         {arregloGaleriaImagenes.map((image, index) => (
           <img
             key={index}
