@@ -23,7 +23,7 @@ const Bienvenida = () => {
         <Col sm={6} className="contenedor-foto-bienvenieda">
           <Col sm={12} className="foto-bienvenida">
             <img
-              src="./../../../public/Carousel/c-imagen1.jpg"
+              src="https://victorbriavi.github.io/WebTime/assets/Carousel/c-imagen1.jpg"
               className="foto"
               alt=""
             />

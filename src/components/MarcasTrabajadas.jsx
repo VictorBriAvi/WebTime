@@ -13,7 +13,7 @@ const MarcasTrabajadas = () => {
           <img
             key={index}
             className="logitoMarca"
-            src={`./../../public/logosMarcas/${imagen.type}-${imagen.id}.png`}
+            src={`https://victorbriavi.github.io/WebTime/assets/logosMarcas/${imagen.type}-${imagen.id}.png`}
             alt=""
           />
         ))}

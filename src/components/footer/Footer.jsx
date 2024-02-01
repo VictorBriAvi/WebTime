@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
           </Col>
           <Col xs={12} className="text-center mt-5 ">
-            <h6>© 2023 Time For You. Todos los derechos reservados.</h6>
+            <h6>© 2023 Time For You - All Rights Reserved</h6>
           </Col>
         </Row>
       </Container>

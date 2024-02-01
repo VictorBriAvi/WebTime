@@ -16,7 +16,7 @@ const Servicios = ({ imagenes }) => {
           <div className="imagen-container">
             <img
               className="imagen-servicio custom-image"
-              src={`../../../public/assets/Servicios/${imagen.type}-${imagen.id}.jpg`}
+              src={`https://victorbriavi.github.io/WebTime/assets/Servicios/${imagen.type}-${imagen.id}.jpg`}
               alt={`Imagen ${index}`}
             />
 

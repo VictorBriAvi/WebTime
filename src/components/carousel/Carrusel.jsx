@@ -21,7 +21,7 @@ const Carrusel = () => {
             <div className="imageContainer">
               <img
                 className="imagenStyle"
-                src={`./../../../public/Carousel/${imagen.type}-${imagen.id}.jpg`}
+                src={`https://victorbriavi.github.io/WebTime/assets/Carousel/${imagen.type}-${imagen.id}.jpg`}
                 alt={`${imagen.name}`}
               />
             </div>
@@ -39,3 +39,6 @@ const Carrusel = () => {
 };
 
 export default Carrusel;
+{
+  /*src={`./../../../public/assets/Carousel/${imagen.type}-${imagen.id}.jpg`}*/
+}
