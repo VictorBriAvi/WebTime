@@ -15,7 +15,7 @@ const GaleriaImagenes = () => {
             key={index}
             src={`https://victorbriavi.github.io/WebTime/assets/Servicios/${image.type}-${image.id}.jpg`}
             alt={`Image ${index}`}
-            className="img-fluid "
+            className="img-fluid my-1"
           />
         ))}
       </div>

@@ -11,6 +11,21 @@
 
 }
 
+.contenedor_titulo {
+
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 0.8rem;
+    background-color: #393E41;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white
+}
+
+.mi-enlace {
+    text-decoration: none;
+    color: inherit;
+
+}
 
 
 
@@ -51,7 +66,7 @@
     grid-row: 1;
     /* Fila 1 */
     /*animation: bounce 4s infinite alternate;*/
-    animation: izquierda 30s infinite alternate;
+    animation: izquierda 10s infinite alternate;
 
 
 }
@@ -66,7 +81,7 @@
     /* Columna 2 */
     grid-row: 2;
     /* Fila 1 */
-    animation: derecha 30s infinite alternate;
+    animation: derecha 10s infinite alternate;
 
 }
 
@@ -76,7 +91,7 @@
     /* Columna 1 */
     grid-row: 3;
     /* Fila 2 */
-    animation: izquierda 30s infinite alternate;
+    animation: izquierda 10s infinite alternate;
 }
 
 .whatsapp {
@@ -85,7 +100,7 @@
     /* Columna 2 */
     grid-row: 4;
     /* Fila 2 */
-    animation: derecha 30s infinite alternate;
+    animation: derecha 10s infinite alternate;
 }
 
 
@@ -94,20 +109,20 @@
 
 @keyframes derecha {
     0% {
-        transform: translateX(100%);
+        transform: translateX(-50%);
     }
 
     100% {
-        transform: translateX(0%);
+        transform: translateX(50%);
     }
 }
 
 @keyframes izquierda {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(50%);
     }
 }

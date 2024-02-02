@@ -25,27 +25,57 @@ const Redes = () => {
 
   return (
     <>
-      <div>
-        <h1>Siguenos en nuestras redes</h1>
+      <div className="contenedor_titulo">
+        <h1>Nuestras redes</h1>
       </div>
       <div className="contenedor-redes  ">
-        <div className="contenedor-derecha ">
-          <AnimacionLetras palabra="Instagram" />
-          <ImInstagram className="icono instagram  " style={{ color: color }} />
-        </div>
+        <a
+          href={`https://www.instagram.com/timepeluqueria?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mi-enlace"
+        >
+          <div className="contenedor-derecha ">
+            <AnimacionLetras palabra="Instagram" />
+            <ImInstagram className="icono instagram  " />
+          </div>
+        </a>
 
-        <div className="contenedor-izquierda ">
-          <AnimacionLetras palabra="Facebook" />
-          <ImFacebook2 className="icono facebook" style={{ color: color }} />
-        </div>
-        <div className="contenedor-derecha ">
-          <AnimacionLetras palabra="TikTok" />
-          <FaTiktok className="icono tiktok" style={{ color: color }} />
-        </div>
-        <div className="contenedor-izquierda ">
-          <AnimacionLetras palabra="WhatsApp" />
-          <BsWhatsapp className="icono whatsapp" style={{ color: color }} />
-        </div>
+        <a
+          href={`https://www.instagram.com/timepeluqueria?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mi-enlace"
+        >
+          <div className="contenedor-izquierda ">
+            <AnimacionLetras palabra="Facebook" />
+            <ImFacebook2 className="icono facebook" />
+          </div>
+        </a>
+
+        <a
+          href={`https://www.instagram.com/timepeluqueria?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mi-enlace"
+        >
+          <div className="contenedor-derecha ">
+            <AnimacionLetras palabra="TikTok" />
+            <FaTiktok className="icono tiktok" />
+          </div>
+        </a>
+
+        <a
+          href={`https://www.instagram.com/timepeluqueria?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mi-enlace"
+        >
+          <div className="contenedor-izquierda ">
+            <AnimacionLetras palabra="WhatsApp" />
+            <BsWhatsapp className="icono whatsapp" />
+          </div>
+        </a>
       </div>
     </>
   );

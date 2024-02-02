@@ -7,6 +7,7 @@ import MarcasTrabajadas from "./MarcasTrabajadas";
 import Servicios from "./servicios/Servicios";
 import Redes from "./contacto/Redes";
 import GaleriaImagenes from "./galeriaImagenes/GaleriaImagenes";
+import Ubicacion from "../pages/Ubicacion";
 
 const Home = () => {
   return (
@@ -25,6 +26,8 @@ const Home = () => {
           </Container>
 
           <GaleriaImagenes />
+
+          <Ubicacion />
         </div>
       </div>
     </div>
