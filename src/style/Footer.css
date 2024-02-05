@@ -4,8 +4,22 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    color: #FFFFFF;
+    color: #000000;
+    background-image: url("../assets/background/textura-desgastada.jpg");
+    background-size: 80%;
+    /* Ajusta el tamaño de la imagen al 50% del contenedor */
+    background-repeat: repeat;
+    /* Evita que la imagen se repita */
+    background-position: center;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 
+}
+
+
+
+
+.redes {
+    font-size: 2rem;
 }
 
 .contenedor-row-footer {
@@ -19,12 +33,101 @@
 }
 
 .imagen-logo-footer {
-    width: 200px;
+    width: 300px;
 }
 
 .contenedor-redes-footer {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
-    color: #FFFFFF;
+    color: #000000;
+
+
+}
+
+.contenedor-logo-footer {
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .contenedor-footer {
+
+
+        background-image: url("../assets/background//textura-desgastada.jpg");
+        background-size: cover;
+        /* Ajusta el tamaño de la imagen al 50% del contenedor */
+        background-repeat: repeat;
+        /* Evita que la imagen se repita */
+        background-position: center;
+
+    }
+}
+
+
+
+.footer-info {
+    text-align: left;
+
+
+}
+
+
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+.footer-list p {
+    margin: 0;
+}
+
+.footer-list p svg {
+    margin-right: 5px;
+    /* Añade espacio entre el icono y el texto */
+}
+
+hr {
+    border-color: #fff;
+    /* Cambia el color de la línea si es necesario */
+}
+
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav li {
+    margin: 0 10px;
+    /* Espacio entre elementos */
+}
+
+.footer-nav li p,
+.footer-nav li span {
+    margin: 0;
+    /* Elimina el margen predeterminado de los párrafos y los spans */
+    font-weight: bolder;
+    text-transform: uppercase;
+
+    /* Hace que el texto esté en negrita */
 }

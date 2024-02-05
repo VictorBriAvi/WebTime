@@ -3,7 +3,7 @@ import mapa from "../../assets/WorldMap.svg";
 import "../../style/Redes.css";
 import { FaSearchLocation, FaTiktok } from "react-icons/fa";
 import { ImFacebook2, ImInstagram } from "react-icons/im";
-import { BsWhatsapp } from "react-icons/bs";
+
 import { useEffect, useState } from "react";
 import AnimacionLetras from "../../animacionLetras";
 
@@ -24,60 +24,43 @@ const Redes = () => {
   }, []);
 
   return (
-    <>
-      <div className="contenedor_titulo">
-        <h1>Nuestras redes</h1>
-      </div>
-      <div className="contenedor-redes  ">
-        <a
-          href={`https://www.instagram.com/timepeluqueria?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mi-enlace"
-        >
-          <div className="contenedor-derecha ">
-            <AnimacionLetras palabra="Instagram" />
-            <ImInstagram className="icono instagram  " />
-          </div>
-        </a>
+    <div className="contenedor-redes  protest-guerrilla-regular ">
+      <a
+        href={`https://www.instagram.com/timepeluqueria?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mi-enlace"
+      >
+        <div className="contenedor-derecha  mx-5">
+          <ImInstagram className="icono instagram  mx-2 " />
+          <AnimacionLetras palabra="Instagram" />
+        </div>
+      </a>
 
-        <a
-          href={`https://www.instagram.com/timepeluqueria?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mi-enlace"
-        >
-          <div className="contenedor-izquierda ">
-            <AnimacionLetras palabra="Facebook" />
-            <ImFacebook2 className="icono facebook" />
-          </div>
-        </a>
+      <a
+        href={`https://www.facebook.com/peluqueriatime`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mi-enlace"
+      >
+        <div className="contenedor-derecha mx-5 ">
+          <ImFacebook2 className="icono facebook  mx-2" />
+          <AnimacionLetras palabra="Facebook" />
+        </div>
+      </a>
 
-        <a
-          href={`https://www.instagram.com/timepeluqueria?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mi-enlace"
-        >
-          <div className="contenedor-derecha ">
-            <AnimacionLetras palabra="TikTok" />
-            <FaTiktok className="icono tiktok" />
-          </div>
-        </a>
-
-        <a
-          href={`https://www.instagram.com/timepeluqueria?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mi-enlace"
-        >
-          <div className="contenedor-izquierda ">
-            <AnimacionLetras palabra="WhatsApp" />
-            <BsWhatsapp className="icono whatsapp" />
-          </div>
-        </a>
-      </div>
-    </>
+      <a
+        href={`#`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mi-enlace"
+      >
+        <div className="contenedor-derecha  mx-5">
+          <FaTiktok className="icono tiktok  mx-2" />
+          <AnimacionLetras palabra="TikTok" />
+        </div>
+      </a>
+    </div>
   );
 };
 

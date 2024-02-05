@@ -4,8 +4,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
 
 }
+
+@media (max-width: 767px) {
+    .imagenStyle {
+
+        object-fit: cover;
+
+        /* Ajusta el valor según sea necesario */
+    }
+
+
+
+
+}
+
 
 .captionStyle {
     display: flex;

@@ -1,21 +1,29 @@
 .contenedor-redes {
 
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 0;
-    grid-auto-flow: column;
-    position: relative;
-    justify-items: center;
+    display: flex;
+    background-image: url(/WebTime/src/assets/background/textura-desgastada.jpg);
+    background-size: 50%;
+    background-repeat: repeat;
+    background-position: center;
+    align-items: center;
     justify-content: center;
+    flex-direction: row;
+    height: 25vh;
 
+
+}
+
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .contenedor_titulo {
 
     text-align: center;
     margin-bottom: 3rem;
-    padding: 0.8rem;
+    padding: 0.5rem;
     background-color: #393E41;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: white
@@ -32,15 +40,17 @@
 .icono {
 
     margin-bottom: 20px;
-    font-size: 4rem;
+    font-size: 2rem;
 
 }
 
 
 
+
+
 .contenedor-derecha {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .contenedor-derecha:hover {
@@ -66,13 +76,12 @@
     grid-row: 1;
     /* Fila 1 */
     /*animation: bounce 4s infinite alternate;*/
-    animation: izquierda 10s infinite alternate;
+    animation: izquierda 20s infinite alternate;
+    width: 100%;
+
 
 
 }
-
-
-
 
 
 
@@ -81,7 +90,8 @@
     /* Columna 2 */
     grid-row: 2;
     /* Fila 1 */
-    animation: derecha 10s infinite alternate;
+    animation: derecha 20s infinite alternate;
+    width: 100%;
 
 }
 
@@ -91,7 +101,8 @@
     /* Columna 1 */
     grid-row: 3;
     /* Fila 2 */
-    animation: izquierda 10s infinite alternate;
+    animation: izquierda 20s infinite alternate;
+    width: 100%;
 }
 
 .whatsapp {
@@ -100,29 +111,25 @@
     /* Columna 2 */
     grid-row: 4;
     /* Fila 2 */
-    animation: derecha 10s infinite alternate;
+    animation: derecha 20s infinite alternate;
 }
 
+@media only screen and (max-width: 600px) {
+
+    /* Estilos específicos para pantallas con un ancho máximo de 600px (por ejemplo, teléfonos) */
+    .contenedor-redes {
+
+        display: flex;
+        background-image: url(/WebTime/src/assets/background/textura-desgastada.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        align-items: center;
+        flex-direction: column;
+        height: 50vh;
+        justify-content: space-around;
 
 
 
-
-@keyframes derecha {
-    0% {
-        transform: translateX(-50%);
-    }
-
-    100% {
-        transform: translateX(50%);
-    }
-}
-
-@keyframes izquierda {
-    0% {
-        transform: translateX(-50%);
-    }
-
-    100% {
-        transform: translateX(50%);
     }
 }

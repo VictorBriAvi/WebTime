@@ -1,6 +1,7 @@
 .animated-letter {
     opacity: 0;
     animation: aparecer 6s forwards infinite;
+    font-size: 2rem;
 
 }
 

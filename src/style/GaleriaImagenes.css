@@ -1,6 +1,6 @@
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     /* Cambia el número de columnas según tus necesidades */
     grid-gap: 0;
     /* Elimina cualquier espacio entre las imágenes */

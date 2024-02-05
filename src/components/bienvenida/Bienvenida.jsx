@@ -22,11 +22,17 @@ const Bienvenida = () => {
         </Col>
         <Col sm={6} className="contenedor-foto-bienvenieda">
           <Col sm={12} className="foto-bienvenida">
-            <img
-              src="https://victorbriavi.github.io/WebTime/assets/Carousel/c-imagen1.jpg"
-              className="foto"
-              alt=""
-            />
+            <div className="video-container">
+              <video
+                src="../../../public/assets/Bienvenida/videoBienvenida.mp4"
+                className="video"
+                autoPlay
+                loop
+                muted
+              >
+                Tu navegador no admite el elemento de video.
+              </video>
+            </div>
           </Col>
         </Col>
       </Row>

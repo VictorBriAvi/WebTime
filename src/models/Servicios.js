@@ -31,11 +31,7 @@ export const servicios = [{
         type: "s"
 
     },
-    {
-        id: "promociones",
-        name: "Promociones",
-        type: "s"
-    },
+
     /*
     {
         id: "tratamientoCapilar",

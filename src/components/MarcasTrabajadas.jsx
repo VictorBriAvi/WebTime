@@ -7,7 +7,7 @@ const MarcasTrabajadas = () => {
     (img) => img.type === "m"
   );
   return (
-    <div className="contenedor-marcas mt-5">
+    <div className="contenedor-marcas mt-5 bg-black">
       <div className="marcas-cinta my-5">
         {arregloMarcasTrabajadas.map((imagen, index) => (
           <img

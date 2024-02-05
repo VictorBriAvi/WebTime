@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import imagenLogo from "../../assets/Logos/LogotipoOriginalPNG.png";
 import { Carrousel } from "../../models/Carousel";
 import "../../style/Carrusel.css";
+
 const Carrusel = () => {
   const [index, setIndex] = useState(0);
 
@@ -17,11 +18,11 @@ const Carrusel = () => {
       <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
         {imagenesCarrousel.map((imagen, idx) => (
           <Carousel.Item key={idx} className="carouselItemStyle">
-            <div className="overlay"></div>
             <div className="imageContainer">
               <img
                 className="imagenStyle"
-                src={`https://victorbriavi.github.io/WebTime/assets/Carousel/${imagen.type}-${imagen.id}.jpg`}
+                /*src={`https://victorbriavi.github.io/WebTime/assets/Carousel/${imagen.type}-${imagen.id}.jpg`}*/
+                src={`../../../public/assets/Carousel/${imagen.type}-${imagen.id}.jpg`}
                 alt={`${imagen.name}`}
               />
             </div>

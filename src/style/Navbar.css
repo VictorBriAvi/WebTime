@@ -1,17 +1,21 @@
 .imagen-logo-navbar {
-    width: 150px;
+    width: 200px;
 }
 
 
 .color-fondo-navbar {
-    background-color: #343F3E;
+    background-image: url("../assets/background//textura-desgastada.jpg");
+    background-size: 20%;
+    /* Ajusta el tamaño de la imagen al 50% del contenedor */
+    background-repeat: repeat;
+    /* Evita que la imagen se repita */
+    background-position: center;
+    /* Centra la imagen */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.fondo-logo {
 
-    border-bottom: 1px solid indigo;
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
-}
+
 
 .css-button-retro--yellow {
     min-width: 130px;
@@ -50,4 +54,14 @@
     transition: 0.2s;
     background-color: #ffe566;
 
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    /* Estilos específicos para pantallas con un ancho máximo de 600px (por ejemplo, teléfonos) */
+    .color-fondo-navbar {
+        background-size: cover;
+
+    }
 }

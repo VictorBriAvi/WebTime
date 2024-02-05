@@ -5,7 +5,30 @@
     display: flex;
     align-items: center;
 
+    background-image: url("../assets/background//textura-desgastada.jpg");
+    background-size: 50%;
+    /* Ajusta el tamaño de la imagen al 50% del contenedor */
+    background-repeat: repeat;
+    /* Evita que la imagen se repita */
+    background-position: center;
+
+
 }
+
+
+
+@media only screen and (max-width: 600px) {
+
+    /* Estilos específicos para pantallas con un ancho máximo de 600px (por ejemplo, teléfonos) */
+    .contenedor-marcas {
+
+
+
+        background-size: 70%;
+
+    }
+}
+
 
 .marcas-cinta {
     display: flex;

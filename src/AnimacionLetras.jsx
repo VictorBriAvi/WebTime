@@ -11,7 +11,7 @@ const AnimacionLetras = ({ palabra }) => {
   }, []);
 
   return (
-    <div className="contenedor mx-5">
+    <div className="contenedor">
       {letras.map((letra, index) => (
         <h1 key={index} className={`animated-letter letter-${index} `}>
           {letra}
