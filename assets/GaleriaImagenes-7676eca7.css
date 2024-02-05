@@ -1,0 +1,1 @@
+.image-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:0}.img-fluid.custom-image{transition:transform .3s ease}.img-fluid.custom-image:hover{transform:scale(.9)}.img-fluid{box-shadow:#06182c66 0 0 0 2px,#06182ca6 0 4px 6px -1px,#ffffff14 0 1px inset;height:auto}
