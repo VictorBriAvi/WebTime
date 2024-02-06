@@ -124,10 +124,9 @@
     /* Estilos específicos para pantallas con un ancho máximo de 600px (por ejemplo, teléfonos) */
     .contenedor-redes {
 
-        display: flex;
-        background-image: url(/WebTime/src/assets/background/textura-desgastada.jpg);
+
         background-size: cover;
-        background-repeat: repeat;
+
         background-position: center;
         align-items: center;
         flex-direction: column;
