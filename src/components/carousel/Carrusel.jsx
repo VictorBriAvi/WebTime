@@ -21,8 +21,13 @@ const Carrusel = () => {
             <div className="imageContainer">
               <img
                 className="imagenStyle"
+<<<<<<< HEAD
                 /*src={`https://victorbriavi.github.io/WebTime/assets/Carousel/${imagen.type}-${imagen.id}.jpg`}*/
                 src={`https://victorbriavi.github.io/WebTime/assets/Carousel/${imagen.type}-${imagen.id}.jpg`}
+=======
+                src={`https://victorbriavi.github.io/WebTime/Carousel/${imagen.type}-${imagen.id}.jpg`}
+   
+>>>>>>> 883c20b8696582c4cb6ad12b4a8f55712e4181c6
                 alt={`${imagen.name}`}
               />
             </div>
