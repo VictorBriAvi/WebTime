@@ -1,7 +1,7 @@
 .contenedor-redes {
 
     display: flex;
-    background-image: url(/WebTime/src/assets/background/textura-desgastada.jpg);
+    background-image: url("../assets/background/textura-desgastada.jpg");
     background-size: 50%;
     background-repeat: repeat;
     background-position: center;
@@ -9,6 +9,7 @@
     justify-content: center;
     flex-direction: row;
     height: 25vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
 
 }
@@ -33,6 +34,10 @@
     text-decoration: none;
     color: inherit;
 
+}
+
+.mi-enlace:hover {
+    color: white;
 }
 
 

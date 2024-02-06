@@ -15,7 +15,10 @@
 }
 
 
+.letras:hover {
+    color: white !important;
 
+}
 
 .css-button-retro--yellow {
     min-width: 130px;

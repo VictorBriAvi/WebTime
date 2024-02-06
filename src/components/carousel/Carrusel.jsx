@@ -22,7 +22,7 @@ const Carrusel = () => {
               <img
                 className="imagenStyle"
                 /*src={`https://victorbriavi.github.io/WebTime/assets/Carousel/${imagen.type}-${imagen.id}.jpg`}*/
-                src={`../../../public/assets/Carousel/${imagen.type}-${imagen.id}.jpg`}
+                src={`https://victorbriavi.github.io/WebTime/assets/Carousel/${imagen.type}-${imagen.id}.jpg`}
                 alt={`${imagen.name}`}
               />
             </div>

@@ -1,20 +1,16 @@
 import React from "react";
-
+import "../style/Loading.css";
 const Loading = () => {
   return (
-    <div class="lds-spinner">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div className="contenedor-loading">
+      <div class="loader">
+        <div class="face">
+          <div class="circle"></div>
+        </div>
+        <div class="face">
+          <div class="circle"></div>
+        </div>
+      </div>
     </div>
   );
 };

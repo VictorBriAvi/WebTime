@@ -6,7 +6,10 @@ import { ImFacebook2, ImInstagram } from "react-icons/im";
 import { BsWhatsapp } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
+import { FaHome } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaShopify } from "react-icons/fa";
+import { BiMoneyWithdraw } from "react-icons/bi";
 const Footer = () => {
   return (
     <div className="contenedor-footer protest-guerrilla-regular bg-dark p-0">
@@ -85,14 +88,23 @@ const Footer = () => {
           </Col>
           <Col xs={12} md={4} className="text-center my-5">
             <ul class="footer-nav">
-              <li>
-                <p>Inicio</p>
+              <li className="icons">
+                <p>
+                  <FaHome />
+                  Inicio
+                </p>
               </li>
-              <li>
-                <p>Precios</p>
+              <li className="icons">
+                <p>
+                  <BiMoneyWithdraw />
+                  Precios
+                </p>
               </li>
-              <li>
-                <p>Tienda</p>
+              <li className="icons">
+                <p>
+                  <FaShopify />
+                  Tienda
+                </p>
               </li>
             </ul>
           </Col>

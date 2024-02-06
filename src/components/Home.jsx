@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 
 import Carrusel from "./carousel/Carrusel";
 import { Container } from "react-bootstrap";
-import LoadingAmanecer from "./LoadingAmanecer";
+
 import Loading from "./Loading";
 
 const Bienvenida = lazy(() => import("../components/bienvenida/Bienvenida"));
@@ -17,7 +17,7 @@ const Ubicacion = lazy(() => import("../pages/Ubicacion"));
 
 const Home = () => {
   return (
-    <Suspense fallback={<LoadingAmanecer />}>
+    <Suspense fallback={<Loading />}>
       <div className="app">
         <div className="content">
           <Carrusel />

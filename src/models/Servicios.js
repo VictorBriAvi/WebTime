@@ -15,11 +15,7 @@ export const servicios = [{
         name: "Cortes",
         type: "s"
     },
-    {
-        id: "descuento",
-        name: "Descuento",
-        type: "s"
-    },
+
     {
         id: "manicura",
         name: "Manicura",
@@ -32,11 +28,11 @@ export const servicios = [{
 
     },
 
-    /*
+
     {
         id: "tratamientoCapilar",
         name: "Tratamiento Capilar",
         type: "s"
     }
-    */
+
 ]

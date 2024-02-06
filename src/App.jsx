@@ -3,8 +3,11 @@ import Navbar from "./components/navbar/Navegacion";
 import Footer from "./components/footer/Footer";
 
 import { Route, Routes } from "react-router-dom";
-import Precios from "./components/Precios";
-import Home from "./components/Home";
+
+import { lazy } from "react";
+
+const Precios = lazy(() => import("./components/Precios"));
+const Home = lazy(() => import("./components/Home"));
 
 function App() {
   return (

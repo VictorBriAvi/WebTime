@@ -24,7 +24,7 @@ const Bienvenida = () => {
           <Col sm={12} className="foto-bienvenida">
             <div className="video-container">
               <video
-                src="../../../public/assets/Bienvenida/videoBienvenida.mp4"
+                src="https://victorbriavi.github.io/WebTime/assets/Bienvenida/videoBienvenida.mp4"
                 className="video"
                 autoPlay
                 loop
