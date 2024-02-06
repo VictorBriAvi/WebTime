@@ -7,7 +7,7 @@
 }
 
 .video-container {
-    max-width: 100%;
+    width: 100%;
     /* Establece un ancho máximo para el contenedor */
     overflow: hidden;
 
@@ -59,6 +59,10 @@
     font-size: 1rem;
 
 
+}
+
+.contenedor-foto-bienvenieda {
+    height: 100%;
 }
 
 
