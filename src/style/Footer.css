@@ -24,6 +24,20 @@
     color: white;
 }
 
+.footer-nav a {
+    color: black;
+    /* Cambia el color del texto a blanco */
+    text-decoration: none;
+    /* Elimina la decoración de subrayado */
+}
+
+.footer-nav a:hover {
+    color: white;
+    /* Cambia el color del texto a blanco al pasar el mouse */
+    text-decoration: none;
+    /* Elimina la decoración de subrayado al pasar el mouse */
+}
+
 
 
 .redes {

@@ -10,7 +10,15 @@ import { FaHome } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaShopify } from "react-icons/fa";
 import { BiMoneyWithdraw } from "react-icons/bi";
+import { Link } from "react-router-dom";
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="contenedor-footer protest-guerrilla-regular bg-dark p-0">
       <Container fuild="md">
@@ -89,16 +97,21 @@ const Footer = () => {
           <Col xs={12} md={4} className="text-center my-5">
             <ul class="footer-nav">
               <li className="icons">
-                <p>
-                  <FaHome />
-                  Inicio
-                </p>
+                <Link to="/WebTime/" onClick={scrollToTop}>
+                  <p>
+                    <FaHome />
+                    Inicio
+                  </p>
+                </Link>
               </li>
+
               <li className="icons">
-                <p>
-                  <BiMoneyWithdraw />
-                  Precios
-                </p>
+                <Link to="/WebTime/Precios" onClick={scrollToTop}>
+                  <p>
+                    <BiMoneyWithdraw />
+                    Precios
+                  </p>
+                </Link>
               </li>
               <li className="icons">
                 <p>

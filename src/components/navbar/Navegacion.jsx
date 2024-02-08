@@ -15,7 +15,9 @@ const Navegacion = () => {
     <Navbar expand="lg" className="color-fondo-navbar">
       <Container className="contenedor-flex">
         <Navbar.Brand href="#home" className="fondo-logo">
-          <img src={imagenLogo} className="imagen-logo-navbar " alt="" />
+          <Nav.Link as={Link} to="/WebTime/">
+            <img src={imagenLogo} className="imagen-logo-navbar " alt="" />
+          </Nav.Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

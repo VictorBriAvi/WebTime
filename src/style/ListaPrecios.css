@@ -1,0 +1,47 @@
+.contenedor-lista-precios {
+
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ListaPrecios.css */
+.precios-table {
+    width: 100%;
+
+}
+
+.header-cell-left {
+    text-align: left;
+
+    width: 50vw;
+    /* Agrega más espacio horizontal */
+
+
+
+}
+
+.header-cell-right {
+    text-align: right;
+
+    width: 50vw;
+}
+
+.service-cell {
+
+    text-align: left;
+    width: 50vw;
+}
+
+.price-cell {
+    text-align: right;
+    width: 50vw;
+    /* Agrega más espacio horizontal */
+
+}

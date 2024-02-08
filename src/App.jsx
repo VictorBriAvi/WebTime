@@ -4,10 +4,8 @@ import Footer from "./components/footer/Footer";
 
 import { Route, Routes } from "react-router-dom";
 
-import { lazy } from "react";
-
-const Precios = lazy(() => import("./components/Precios"));
-const Home = lazy(() => import("./components/Home"));
+import Home from "./components/Home";
+import Precios from "./components/Precios";
 
 function App() {
   return (
