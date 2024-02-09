@@ -3,10 +3,14 @@
     /* Oculta el contenido que desborda */
     width: 100%;
     height: 25vh;
+
+    /* Ancho del contenedor */
+
+    /* Centrar el contenedor */
     display: flex;
     align-items: center;
 
-    background-image: url("../assets/background//textura-desgastada.jpg");
+    background-image: url("../assets/background//textura-desgastada.jpeg");
     background-size: 50%;
     /* Ajusta el tamaño de la imagen al 50% del contenedor */
     background-repeat: repeat;
@@ -17,46 +21,31 @@
 
 }
 
+.contenedor-imagenes {
+
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
 
 
 @media only screen and (max-width: 600px) {
 
     /* Estilos específicos para pantallas con un ancho máximo de 600px (por ejemplo, teléfonos) */
     .contenedor-marcas {
-
-
-
         background-size: cover;
 
     }
 }
 
-
 .marcas-cinta {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    align-items: center;
-    justify-content: flex-start;
+    width: 100%;
+    text-align: center;
 }
 
 .logitoMarca {
-    width: 50%;
+    width: 300px !important;
     height: 5rem;
-    margin: 0 60px;
-    /* Reduce el margen */
-    animation: moverCinta 40s linear infinite;
-    /* Resto de los estilos... */
-}
-
-@keyframes moverCinta {
-    0% {
-        transform: translateX(-400%);
-        /* Empieza desde la derecha */
-    }
-
-    100% {
-        transform: translateX(300%);
-        /* Termina en la izquierda */
-    }
 }

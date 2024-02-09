@@ -25,29 +25,25 @@ export const valoresServicios = [
 
 
     },
+
+    /** Esmaltado Comun*/
+
     {
         type: "comun",
 
-        name: "Manicura (externo)",
+        name: "Manicura ",
         price: 1650
 
 
     },
-    /** ESMALTADO COMUN*/
     {
         type: "comun",
-        name: "Manicura",
+        name: "Pedicura",
         price: 3600
 
 
     },
-    {
-        type: "comun",
-        name: "pedicura",
-        price: 3600
 
-
-    },
 
     /** Kapping*/
 

@@ -16,7 +16,7 @@ const ListaPrecios = ({ titulo, servicios }) => {
   };
   return (
     <div className="contenedor-lista-precios protest-guerrilla-regular">
-      <h1>{capitalizeFirstLetter(titulo)}</h1>
+      <h1 className="titulo-precios">{capitalizeFirstLetter(titulo)}</h1>
       <div>
         <table className="precios-table ">
           <thead>

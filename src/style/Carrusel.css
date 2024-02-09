@@ -8,12 +8,23 @@
 
 }
 
-@media (max-width: 767px) {
+.contenedor-carrousel {
+
+    border: 2px solid white;
+}
+
+
+@media only screen and (max-width: 600px) {
     .imagenStyle {
 
         object-fit: cover;
 
         /* Ajusta el valor según sea necesario */
+    }
+
+    .captionStyle {
+        display: contents;
+
     }
 
 
@@ -24,11 +35,12 @@
 
 .captionStyle {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
-    text-align: center;
+
+
 }
 
 .overlay {
@@ -40,13 +52,12 @@
     /* Cambia el valor alfa para ajustar la opacidad */
 }
 
+
 .imagen-logo {
     width: 200px;
-    /* Ajusta el tamaño inicial de la imagen */
     animation: zoomInOut 2s infinite alternate;
-    /* Nombre de la animación, duración, iteración */
     animation-delay: 2s;
-    /* Ajusta el retraso antes de que comience la animación */
+
 }
 
 @keyframes zoomInOut {

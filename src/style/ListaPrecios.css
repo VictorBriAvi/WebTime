@@ -4,6 +4,12 @@
     margin-bottom: 8rem;
 }
 
+.titulo-precios {
+
+    margin-bottom: 30px;
+}
+
+
 .protest-guerrilla-regular {
     font-family: "Protest Guerrilla", sans-serif;
     font-weight: 400;
@@ -18,7 +24,7 @@
 }
 
 .header-cell-left {
-    text-align: left;
+    text-align: center;
 
     width: 50vw;
     /* Agrega más espacio horizontal */
@@ -35,13 +41,15 @@
 
 .service-cell {
 
-    text-align: left;
+
     width: 50vw;
+
 }
 
 .price-cell {
-    text-align: right;
+
     width: 50vw;
+
     /* Agrega más espacio horizontal */
 
 }

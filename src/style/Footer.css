@@ -5,7 +5,7 @@
     justify-content: center;
     flex-wrap: wrap;
     color: #000000;
-    background-image: url("../assets/background/textura-desgastada.jpg");
+    background-image: url("../assets/background/textura-desgastada.jpeg");
     background-size: 80%;
     /* Ajusta el tamaño de la imagen al 50% del contenedor */
     background-repeat: repeat;
@@ -81,7 +81,7 @@
     .contenedor-footer {
 
 
-        background-image: url("../assets/background//textura-desgastada.jpg");
+
         background-size: cover;
         /* Ajusta el tamaño de la imagen al 50% del contenedor */
         background-repeat: repeat;

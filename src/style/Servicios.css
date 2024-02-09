@@ -49,8 +49,8 @@
     /* Centra horizontalmente */
     position: relative;
     overflow: hidden;
-
-    /* Oculta cualquier parte de la imagen que se extienda más allá del contenedor */
+    border: 3px solid white;
+    border-radius: 9px;
 }
 
 .texto-superpuesto {

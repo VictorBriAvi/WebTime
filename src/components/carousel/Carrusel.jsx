@@ -28,13 +28,19 @@ const Carrusel = () => {
 
   return (
     <Suspense fallback={<Loading />}>
-      <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
+      <Carousel
+        activeIndex={index}
+        onSelect={handleSelect}
+        interval={null}
+        className="contenedor-carrousel"
+      >
         {imagenesCarrousel.map((imagen, idx) => (
           <Carousel.Item key={idx} className="carouselItemStyle">
             <div className="imageContainer">
               <img
                 className="imagenStyle"
-                src={`https://victorbriavi.github.io/WebTime/assets/Carousel/${imagen.type}-${imagen.id}.jpg`}
+                src={`https://victorbriavi.github.io/WebTime/assets/Carousel/${imagen.type}-${imagen.id}.jpeg`}
+                /* src={`../../../public/assets/Carousel/${imagen.type}-${imagen.id}.jpeg`}*/
                 alt={`${imagen.name}`}
               />
             </div>
