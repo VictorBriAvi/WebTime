@@ -2,6 +2,7 @@ import { useEffect, useState, lazy, Suspense } from "react";
 import { Container } from "react-bootstrap";
 import "../../style/Servicios.css";
 import { servicios } from "../../models/Servicios";
+import { Link } from "react-router-dom";
 
 const Servicios = () => {
   const [imagenesServicios, setImagenesServicios] = useState([]);
@@ -37,7 +38,9 @@ const Servicios = () => {
               />
 
               <div className="texto-superpuesto custom-image">
-                <button className="css-button-sliding-to-top--black ">{`${imagen.name.toUpperCase()}`}</button>
+                <Link to="/WebTime/barberia">
+                  <button className="css-button-sliding-to-top--black ">{`${imagen.name.toUpperCase()}`}</button>
+                </Link>
               </div>
             </div>
           ))}

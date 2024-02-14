@@ -1,5 +1,5 @@
 import React from "react";
-import { valoresServicios } from "../models/valoresServicios";
+import { valoresServicios } from "../models/ValoresServicios";
 
 import { Col, Container, Row } from "react-bootstrap";
 import ListaPrecios from "./ListaPrecios";

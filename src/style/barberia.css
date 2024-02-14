@@ -1,0 +1,33 @@
+.contenedor-barberia {
+    height: auto;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.contenedor-videos {
+
+
+
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+
+.contenedor-precios {
+    width: 100%;
+    text-align: center;
+
+}
+
+.video-servicio {
+
+    height: 100%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}

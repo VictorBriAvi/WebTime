@@ -101,4 +101,21 @@ export const valoresServicios = [
         name: "Retiro (Trabajo interno)",
         price: 2640
     },
+    /** Esculpidas*/
+    {
+        type: "barberia",
+        name: "Corte",
+        price: 4000
+    },
+    {
+        type: "barberia",
+        name: "Barba",
+        price: 2500
+    },
+    {
+        type: "barberia",
+        name: "Corte y barba",
+        price: 2500
+    },
+
 ]
