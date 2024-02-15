@@ -35,7 +35,7 @@ const Barberia = () => {
                   <video
                     className="video-servicio"
                     muted
-                    src="https://victorbriavi.github.io/WebTime/VideosServicios/c-barberia2.mp4"
+                    src="https://victorbriavi.github.io/WebTime/assets/VideosServicios/c-barberia2.mp4"
                     controls
                   />
                 </Col>
